@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameController">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -13,6 +16,14 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="600.0" prefWidth="800.0" />
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Button layoutX="376.0" layoutY="559.0" mnemonicParsing="false" onAction="#btnBack" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <AnchorPane fx:id="ap" layoutX="25.0" layoutY="31.0" prefHeight="500.0" prefWidth="750.0" />
+         </children></Pane>
    </children>
 </GridPane>
