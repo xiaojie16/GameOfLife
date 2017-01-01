@@ -54,8 +54,8 @@ public class GameController implements Initializable{
                     mapIndex[i][j] = 1;
                 }
                 //随机初始化
-                else
-                    mapIndex[i][j] = random.nextInt(2);
+//                else
+//                    mapIndex[i][j] = random.nextInt(2);
             }
             model1();
 //        model2();
