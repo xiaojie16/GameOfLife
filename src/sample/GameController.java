@@ -57,7 +57,7 @@ public class GameController implements Initializable{
                 else
                     mapIndex[i][j] = random.nextInt(2);
             }
-//            model1();
+            model1();
 //        model2();
     }
 
